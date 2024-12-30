@@ -1,4 +1,4 @@
-function Mac() {
+function Cart() {
 	return (
 		<div>
 			<section className="internal-page-wrapper">
@@ -14,4 +14,4 @@ function Mac() {
 	);
 }
 
-export default Mac;
+export default Cart;

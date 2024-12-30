@@ -1,4 +1,4 @@
-function Mac() {
+function Ipad() {
 	return (
 		<div>
 			<section className="internal-page-wrapper">
@@ -13,4 +13,4 @@ function Mac() {
 		</div>
 	);
 }
-export default Mac;
+export default Ipad;

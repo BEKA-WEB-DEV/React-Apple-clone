@@ -1,169 +1,205 @@
-/* ---common styling for each sections--- */
-.common-section {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  margin: 10px 0 20px;
+/*Sixth Section*/
+.sixth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("../../commonResource/images/home/spyder.jpg"); 
+	background-color: #000;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
 }
-.common-one a,
-.common-two a {
-  font-size: 18px;
-  text-decoration: none;
-  color: rgb(44, 87, 216);
+.sixth-heghlight-wrapper .right-side-wrapper .right-side-container{
+	background-image:  url("../../commonResource/images/home/apple-card-monthly.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
 }
-.common-one a:hover,
-.common-two a:hover {
-  color: black;
-}
-.comman-hover a:hover {
-  color: #fff;
-}
-.common-one a::after,
-.common-two a::after {
-  font-family: "fontawesome";
-  content: "\f105";
-  margin-left: 5px;
-  font-weight: 900;
-}
-/*------ section one styling------ */
-.section-one {
-  background: #fdfdfd;
-}
-.section-one-model p {
-  font-size: 17px;
-}
-.section-one-mac h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-.section-one-text p {
-  font-size: 30px;
-  font-weight: 400;
-}
-/*------- section 2 & 3 stylying ----------*/
-.section-two {
-  background-image: url("./iphone11-pro-bg.jpg");
-  color: #fff;
-}
-.section-three {
-  background-image: url("./iphone11-bg.jpg");
 
-  color: #000;
+.left-side-container {
+	min-height: 515px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;	
 }
-/* ---common styling for section 2 & 3--- */
-.sect23-common {
-  width: 100%;
-  height: 580px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 65px;
-  padding-bottom: 55px;
+
+.right-side-container {
+	min-height: 515px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;	
 }
-.section-two-iphone,
-.section-three-iphone {
-  font-size: 40px;
-  font-weight: bold;
+.left-side-wrapper {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-.section-two-text,
-.section-three-text {
-  font-size: 22px;
+
+.right-side-wrapper {
+  padding-right: 0px;
+  padding-left: 0px;
 }
-.section-two-trade {
-  font-size: 18px;
-  color: #aeabab;
+.sixth-heghlight-wrapper .links-wrapper {
+	max-width: 300px;
+	margin: 0 auto;
 }
-.section-three-trade {
-  font-size: 18px;
-  color: #737171;
+.links-wrapper ul {
+	list-style: none;
 }
-/* section four styling */
-.section-four-one {
-  background-image: url("./watch-series-5.jpg");
+.product-title {
+	font-weight: 700;
+	font-size: 56px;
 }
-.section-four-two {
-  background-image: url("./apple-card.jpg");
+.brief-description {
+	font-size: 2em;
 }
-/* --common styling for section 4-- */
-.section-4-common {
-  height: 580px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding-top: 44px;
+.sixth-heghlight-wrapper .description-wraper {
+	max-width: 250px;
+	margin: 7px auto;
 }
-.section-four-text p {
-  font-size: 18px;
+.description-wraper.white{
+	color: white;
 }
-/* ---- section five styling--- */
-.section-five-one {
-  background-image: url("./apple-tv-background.jpg");
-  background-position: center;
-  background-size: cover;
+.links-wrapper {
+	padding: 15px 0;
 }
-.section-five-two {
-  background: #000;
-  background-image: url("./air-pods.jpg");
-  background-size: auto;
-  background-position: bottom;
+.links-wrapper ul li {
+	display: inline-block;
+	padding-right: 20px;
 }
-/* ----common styling for section 5--- */
-.section-5-common {
-  height: 580px;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 44px;
+.links-wrapper ul li a {
+	color: #06c;
+	text-decoration: none;
+	font-size: 21px;
 }
-.section-five-tv {
-  margin-bottom: 180px;
+.links-wrapper ul li a:hover {
+	color: #000;
 }
-.section-five-servant {
-  margin-bottom: 180px;
+.links-wrapper ul li a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f105";
+  padding-left: 10px;
 }
-.section-five-watch a {
-  text-decoration: none;
-}
-.section-five-watch a::after {
-  font-family: "fontawesome";
-  content: "\f0da";
-  margin-left: 10px;
-  font-weight: 800;
-}
-.section-five-air {
+.title-wraper {
+  font-weight: 600;
   font-size: 30px;
-  font-weight: bold;
-  color: #fff;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
 }
-.section-five-text {
-  font-size: 18px;
-  color: #fff;
+.title-wraper.bold {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
 }
-/* -----section six styling---- */
-.section-six-one {
-  background: #f7f7f7;
-  background-image: url("./macbook-pro.jpg");
-  background-size: auto;
-  background-position: bottom;
+.right-side-wrapper .title-wraper {
+	max-width: 280px;
+	margin: 0 auto;
+} 
+.description-wrapper {
+	font-size: 26px;
+	padding: 10px 0;
 }
-.section-six-two {
-  background-image: url("./new-ipad.jpg");
+/*Fifth Section*/
+.fifth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("../../commonResource/images/home/actors.jpg"); 
+	background-color: #000;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
+}
+.fifth-heghlight-wrapper .right-side-wrapper .right-side-container{
+	background-image:  url("../../commonResource/images/home/watch.jpg"); 
+	background-color: #fbfbfd;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+}
+.fifth-heghlight-wrapper .description-wraper {
+	max-width: 450px;
+	margin: 7px auto;
+}
+.watch-more-wrapper a {
+	text-decoration: none;
+	font-size: 0.85em;
+	color: #fff;
+}
+.watch-more-wrapper a:after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
+}
+.tvshow-logo-wraper {
+	padding: 340px 0 0px;
+}
+/* Fourth section */
+.fourth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("../../commonResource/images/home/iphone11-colored.jpg"); 
+	background-color: #000;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
+}
+.fourth-heghlight-wrapper .right-side-wrapper .right-side-container{
+	background-image:  url("../../commonResource/images/home/apple-blue-logo.jpg"); 
+	background-color: #165ca9;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+}
+.links-wrapper.white li a {
+	color: #fff;
+}
+.fourth-heghlight-wrapper .right-side-wrapper .title-wraper {
+    max-width: 380px;
+}
+/*Third section*/
+.third-hightlight-wrapper {
+	background-image: url("../../commonResource/images/home/iphone11-pro-bg.jpg");
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
 }
-/* --- common styling for section 6 ---- */
-.section-6-common {
-  height: 580px;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 40px;
+/*Second section*/
+.second-hightlight-wrapper {
+	background-image: url("../../commonResource/images/home/macbookair-new-sm.jpg");
+	height: 580px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+  background-size: initial;
+  background-color: #fbfbfd;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
+	margin-bottom: 10px;	
 }
-.section-six-model {
-  font-size: 15px;
+/*First Section*/
+.first-hightlight-wrapper{
+	background-image: url("../../commonResource/images/home/ipodPronew-sm.jpg");
+	height: 580px;
+	background-position: bottom;
+	background-repeat: no-repeat;
+  background-size: initial;
+  background-color: #fbfbfd;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;	
+	margin-bottom: 10px;
 }
-.section-six-mac {
-  font-size: 35px;
-}
-.section-six-text {
-  font-size: 22px;
+.ipod-caption {
+	color: #86868b;
+	font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -.01em;		
+  padding-top: 310px;
 }

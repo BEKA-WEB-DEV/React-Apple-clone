@@ -1,13 +1,46 @@
 import "./Iphone.css";
 
+// import React, { useEffect, useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import axios from 'axios';
+
+// const Iphone = () => {
+//     const [products, setProducts] = useState([]);
+
+//     useEffect(() => {
+//         axios.get('http://localhost:1234/iphones')
+//             .then(response => setProducts(response.data))
+//             .catch(error => console.error('Error fetching products:', error));
+//     }, []);
+
+//     return (
+//         <div className="iphone-list">
+//             <h1>iPhone Products</h1>
+//             <div className="product-grid">
+//                 {products.map(product => (
+//                     <div key={product.pid} className="product-card">
+//                         <h2>{product.name}</h2>
+//                         <p>{product.description}</p>
+//                         <Link to={`/iphone/${product.pid}`}>Learn More</Link>
+//                     </div>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default Iphone;
+
+
 import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
 const Iphone = () => {
   const [data, setData] = useState([]);
+  
   useEffect(() => {
-    fetch("add url")
+    fetch("http://localhost:1234/iphones")
       .then((response) => response.json())
       .then((data) => {
         setData(data.products);
@@ -28,8 +61,7 @@ const Iphone = () => {
             </div>
           </div>
           {data?.map((product) => {
-            let id = ps
-            taryroduct.product_url;
+            let id = product.product_url;
             let title = product.product_name;
             let img = product.product_img;
             let Brief = product.product_brief_description;
@@ -60,7 +92,7 @@ const Iphone = () => {
                   <div className="links-wrapper">
                     <ul>
                       <li>
-                        <Link to={`${product.product_id}`}>Learn more</Link>
+                        <Link to={`/iphone/${product.product_id}`}>Learn more</Link>
                       </li>
                     </ul>
                   </div>
