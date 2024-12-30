@@ -7,6 +7,8 @@ function YoutubeVideos() {
 
   useEffect(() => {
     fetch(
+      // `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=${apiKey}`
+
       `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=AIzaSyCWnvIYOg32aV8AXwBtG9qXkNUk26XJoVM`
     )
       .then((res) => res.json())
