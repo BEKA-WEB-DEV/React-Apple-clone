@@ -3,18 +3,18 @@ import "./YoutubeVideos.css";
 
 function YoutubeVideos() {
   const [youTubeVideos, setYoutubeVideos] = useState([]);
-  // const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+  const apiKey = import.meta.env.VITE_APP_YOUTUBE_API_KEY;
 
   useEffect(() => {
     fetch(
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=${process.env.REACT_APP_YOUTUBE_API_KEY}"
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
         setYoutubeVideos(data.items);
-      });
-  }, []);
-  // console.log(youtubeVideos);
+      })
+      .catch((error) => console.error("Error fetching YouTube videos:", error));
+  }, [apiKey]);
 
   return (
     <div className="youtubeVideosWrapper">
@@ -29,9 +29,9 @@ function YoutubeVideos() {
 
             {youTubeVideos?.map((singleVideo, i) => {
               let vidId = singleVideo.id.videoId;
-
               let vidLink = `https://www.youtube.com/watch?v=${vidId}`;
-              let vidioWrapper = (
+
+              return (
                 <div key={i} className="col-sm-12 col-md-6 col-lg-4">
                   <div className="singleVideoWrapper">
                     <div className="videoThumbnail">
@@ -55,7 +55,6 @@ function YoutubeVideos() {
                   </div>
                 </div>
               );
-              return vidioWrapper;
             })}
           </div>
         </div>
