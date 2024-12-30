@@ -3,18 +3,18 @@ import "./YoutubeVideos.css";
 
 function YoutubeVideos() {
   const [youTubeVideos, setYoutubeVideos] = useState([]);
-  const apiKey = import.meta.env.VITE_APP_YOUTUBE_API_KEY;
+  // const apiKey = import.meta.env.VITE_APP_YOUTUBE_API_KEY;
 
   useEffect(() => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=${apiKey}`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=AIzaSyCWnvIYOg32aV8AXwBtG9qXkNUk26XJoVM`
     )
       .then((res) => res.json())
       .then((data) => {
         setYoutubeVideos(data.items);
       })
       .catch((error) => console.error("Error fetching YouTube videos:", error));
-  }, [apiKey]);
+  }, []);
 
   return (
     <div className="youtubeVideosWrapper">
