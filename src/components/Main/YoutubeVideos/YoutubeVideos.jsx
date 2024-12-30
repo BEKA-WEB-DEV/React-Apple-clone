@@ -3,10 +3,11 @@ import "./YoutubeVideos.css";
 
 function YoutubeVideos() {
   const [youTubeVideos, setYoutubeVideos] = useState([]);
+  // const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
 
   useEffect(() => {
     fetch(
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=AIzaSyCWnvIYOg32aV8AXwBtG9qXkNUk26XJoVM"
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=9&order=date&key=${process.env.REACT_APP_YOUTUBE_API_KEY}"
     )
       .then((res) => res.json())
       .then((data) => {
